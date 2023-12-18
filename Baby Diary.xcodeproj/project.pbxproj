@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE0E8EF2B2FD68900854C8C /* Baby_DiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */; };
+		1CE0E8F12B2FD68900854C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F02B2FD68900854C8C /* ContentView.swift */; };
+		1CE0E8F32B2FD68B00854C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */; };
+		1CE0E8F62B2FD68B00854C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F52B2FD68B00854C8C /* Preview Assets.xcassets */; };
+		1CE0E9002B2FD68B00854C8C /* Baby_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8FF2B2FD68B00854C8C /* Baby_DiaryTests.swift */; };
+		1CE0E90A2B2FD68B00854C8C /* Baby_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9092B2FD68B00854C8C /* Baby_DiaryUITests.swift */; };
+		1CE0E90C2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E90B2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE0E8FC2B2FD68B00854C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE0E8E32B2FD68900854C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE0E8EA2B2FD68900854C8C;
+			remoteInfo = "Baby Diary";
+		};
+		1CE0E9062B2FD68B00854C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE0E8E32B2FD68900854C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE0E8EA2B2FD68900854C8C;
+			remoteInfo = "Baby Diary";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CE0E8EB2B2FD68900854C8C /* Baby Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryApp.swift; sourceTree = "<group>"; };
+		1CE0E8F02B2FD68900854C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE0E8F52B2FD68B00854C8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CE0E8FB2B2FD68B00854C8C /* Baby DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby DiaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE0E8FF2B2FD68B00854C8C /* Baby_DiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryTests.swift; sourceTree = "<group>"; };
+		1CE0E9052B2FD68B00854C8C /* Baby DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby DiaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE0E9092B2FD68B00854C8C /* Baby_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryUITests.swift; sourceTree = "<group>"; };
+		1CE0E90B2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE0E8E82B2FD68900854C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E8F82B2FD68B00854C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E9022B2FD68B00854C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE0E8E22B2FD68900854C8C = {
+			isa = PBXGroup;
+			children = (
+				1CE0E8ED2B2FD68900854C8C /* Baby Diary */,
+				1CE0E8FE2B2FD68B00854C8C /* Baby DiaryTests */,
+				1CE0E9082B2FD68B00854C8C /* Baby DiaryUITests */,
+				1CE0E8EC2B2FD68900854C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE0E8EC2B2FD68900854C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E8EB2B2FD68900854C8C /* Baby Diary.app */,
+				1CE0E8FB2B2FD68B00854C8C /* Baby DiaryTests.xctest */,
+				1CE0E9052B2FD68B00854C8C /* Baby DiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE0E8ED2B2FD68900854C8C /* Baby Diary */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */,
+				1CE0E8F02B2FD68900854C8C /* ContentView.swift */,
+				1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */,
+				1CE0E8F42B2FD68B00854C8C /* Preview Content */,
+			);
+			path = "Baby Diary";
+			sourceTree = "<group>";
+		};
+		1CE0E8F42B2FD68B00854C8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E8F52B2FD68B00854C8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CE0E8FE2B2FD68B00854C8C /* Baby DiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E8FF2B2FD68B00854C8C /* Baby_DiaryTests.swift */,
+			);
+			path = "Baby DiaryTests";
+			sourceTree = "<group>";
+		};
+		1CE0E9082B2FD68B00854C8C /* Baby DiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9092B2FD68B00854C8C /* Baby_DiaryUITests.swift */,
+				1CE0E90B2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift */,
+			);
+			path = "Baby DiaryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE0E8EA2B2FD68900854C8C /* Baby Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE0E90F2B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby Diary" */;
+			buildPhases = (
+				1CE0E8E72B2FD68900854C8C /* Sources */,
+				1CE0E8E82B2FD68900854C8C /* Frameworks */,
+				1CE0E8E92B2FD68900854C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Baby Diary";
+			productName = "Baby Diary";
+			productReference = 1CE0E8EB2B2FD68900854C8C /* Baby Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CE0E8FA2B2FD68B00854C8C /* Baby DiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE0E9122B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby DiaryTests" */;
+			buildPhases = (
+				1CE0E8F72B2FD68B00854C8C /* Sources */,
+				1CE0E8F82B2FD68B00854C8C /* Frameworks */,
+				1CE0E8F92B2FD68B00854C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE0E8FD2B2FD68B00854C8C /* PBXTargetDependency */,
+			);
+			name = "Baby DiaryTests";
+			productName = "Baby DiaryTests";
+			productReference = 1CE0E8FB2B2FD68B00854C8C /* Baby DiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CE0E9042B2FD68B00854C8C /* Baby DiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE0E9152B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby DiaryUITests" */;
+			buildPhases = (
+				1CE0E9012B2FD68B00854C8C /* Sources */,
+				1CE0E9022B2FD68B00854C8C /* Frameworks */,
+				1CE0E9032B2FD68B00854C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE0E9072B2FD68B00854C8C /* PBXTargetDependency */,
+			);
+			name = "Baby DiaryUITests";
+			productName = "Baby DiaryUITests";
+			productReference = 1CE0E9052B2FD68B00854C8C /* Baby DiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE0E8E32B2FD68900854C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1CE0E8EA2B2FD68900854C8C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					1CE0E8FA2B2FD68B00854C8C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 1CE0E8EA2B2FD68900854C8C;
+					};
+					1CE0E9042B2FD68B00854C8C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 1CE0E8EA2B2FD68900854C8C;
+					};
+				};
+			};
+			buildConfigurationList = 1CE0E8E62B2FD68900854C8C /* Build configuration list for PBXProject "Baby Diary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE0E8E22B2FD68900854C8C;
+			productRefGroup = 1CE0E8EC2B2FD68900854C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE0E8EA2B2FD68900854C8C /* Baby Diary */,
+				1CE0E8FA2B2FD68B00854C8C /* Baby DiaryTests */,
+				1CE0E9042B2FD68B00854C8C /* Baby DiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE0E8E92B2FD68900854C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0E8F62B2FD68B00854C8C /* Preview Assets.xcassets in Resources */,
+				1CE0E8F32B2FD68B00854C8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E8F92B2FD68B00854C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E9032B2FD68B00854C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE0E8E72B2FD68900854C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0E8F12B2FD68900854C8C /* ContentView.swift in Sources */,
+				1CE0E8EF2B2FD68900854C8C /* Baby_DiaryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E8F72B2FD68B00854C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0E9002B2FD68B00854C8C /* Baby_DiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE0E9012B2FD68B00854C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0E90C2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift in Sources */,
+				1CE0E90A2B2FD68B00854C8C /* Baby_DiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CE0E8FD2B2FD68B00854C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE0E8EA2B2FD68900854C8C /* Baby Diary */;
+			targetProxy = 1CE0E8FC2B2FD68B00854C8C /* PBXContainerItemProxy */;
+		};
+		1CE0E9072B2FD68B00854C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE0E8EA2B2FD68900854C8C /* Baby Diary */;
+			targetProxy = 1CE0E9062B2FD68B00854C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CE0E90D2B2FD68B00854C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CE0E90E2B2FD68B00854C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE0E9102B2FD68B00854C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Baby Diary/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CE0E9112B2FD68B00854C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Baby Diary/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CE0E9132B2FD68B00854C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-DiaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Baby Diary";
+			};
+			name = Debug;
+		};
+		1CE0E9142B2FD68B00854C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-DiaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Baby Diary";
+			};
+			name = Release;
+		};
+		1CE0E9162B2FD68B00854C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-DiaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Baby Diary";
+			};
+			name = Debug;
+		};
+		1CE0E9172B2FD68B00854C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JF6M2L57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ching.Baby-DiaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Baby Diary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE0E8E62B2FD68900854C8C /* Build configuration list for PBXProject "Baby Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0E90D2B2FD68B00854C8C /* Debug */,
+				1CE0E90E2B2FD68B00854C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE0E90F2B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0E9102B2FD68B00854C8C /* Debug */,
+				1CE0E9112B2FD68B00854C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE0E9122B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby DiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0E9132B2FD68B00854C8C /* Debug */,
+				1CE0E9142B2FD68B00854C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE0E9152B2FD68B00854C8C /* Build configuration list for PBXNativeTarget "Baby DiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0E9162B2FD68B00854C8C /* Debug */,
+				1CE0E9172B2FD68B00854C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE0E8E32B2FD68900854C8C /* Project object */;
+}
