@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol SaveFeedInteractor {
+    func execute(id: String, feeds: [Feed]) async -> Bool
+}

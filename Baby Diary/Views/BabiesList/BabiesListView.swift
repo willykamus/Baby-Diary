@@ -14,8 +14,12 @@ struct BabiesListView: View {
     
     var body: some View {
         NavigationSplitView {
-            List(babiesListViewModel.babies, id: \.id, selection: $selection) { baby in
-                NavigationLink(baby.name.firstName, value: baby)
+            List($babiesListViewModel.babies, id: \.id, selection: $selection) { baby in
+                NavigationLink {
+                    BabyMainView()
+                } label: {
+                    Text(baby.name.wrappedValue.firstName)
+                }
             }
         } detail: {
             if let baby = selection {
@@ -30,6 +34,5 @@ struct BabiesListView: View {
 
 #Preview {
     @State var viewModel = BabiesListViewModel()
-    viewModel.babies = [Baby(id: UUID(), name: Name(firstName: "Savannah", lastName: "Ching"))]
     return BabiesListView(babiesListViewModel: viewModel)
 }

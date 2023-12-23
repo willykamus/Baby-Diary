@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class GetBabiesInteractorImpl: GetBabiesInteractor {
+    
+    var remoteDataSource: BabyRemoteDataSource = BabyRemoteDataSourceImpl()
+    
+    func execute() async -> [Baby] {
+        return await remoteDataSource.get()
+    }
+    
+    
+}

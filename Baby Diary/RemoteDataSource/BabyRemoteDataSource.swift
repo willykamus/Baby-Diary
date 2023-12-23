@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol BabyRemoteDataSource {
+    func get() async -> [Baby]
+    func get(id: String) async -> Baby
+}
+

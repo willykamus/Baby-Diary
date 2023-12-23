@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Name: Hashable {
+    var firstName: String
+    var lastName: String
+    
+    func initialis() -> String {
+        return "SS"
+    }
+}

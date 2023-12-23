@@ -17,13 +17,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 @main
-struct Baby_DiaryApp: App {
+struct BabyDiaryApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BabyMainView()
         }
     }
 }

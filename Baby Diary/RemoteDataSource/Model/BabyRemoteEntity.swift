@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+struct BabyRemoteEntity: Codable {
+    @DocumentID var id: String?
+    var firstName: String
+    var lastName: String
+    var dateOfBirth: Date
+    var feeds: [FeedRemoteEntity]?
+}

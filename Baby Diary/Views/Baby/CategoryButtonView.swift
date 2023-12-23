@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct CategoryButtonView: View {
+    
+    var category: Category
+    var action: () -> ()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(category.rawValue) {
+            action()
+        }
+//        .buttonStyle(CategoryButtonStyle())
     }
 }
 
 #Preview {
-    CategoryButtonView()
+    CategoryButtonView(category: Category.feed, action: {
+        print("Hello")
+    })
 }
+
+//struct CategoryButtonStyle: ButtonStyle {
+//    func makeBody(configuration: Configuration) -> some View {
+//        configuration.label
+//            .padding(.vertical, 8)
+//            .padding(.horizontal)
+//            .background(.pink)
+//            .foregroundStyle(.white)
+//            .cornerRadius(20)
+//    }
+//}

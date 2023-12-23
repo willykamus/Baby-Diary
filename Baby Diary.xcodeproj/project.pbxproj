@@ -7,13 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CE0E8EF2B2FD68900854C8C /* Baby_DiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */; };
+		1CCC83722B35255500AE6784 /* FeedRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83712B35255500AE6784 /* FeedRemoteDataSource.swift */; };
+		1CCC83742B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83732B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift */; };
+		1CCC83762B3537DB00AE6784 /* SaveFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83752B3537DB00AE6784 /* SaveFeedInteractor.swift */; };
+		1CCC83782B35380100AE6784 /* SaveFeedInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83772B35380100AE6784 /* SaveFeedInteractorImpl.swift */; };
+		1CE0E8EF2B2FD68900854C8C /* BabyDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8EE2B2FD68900854C8C /* BabyDiaryApp.swift */; };
 		1CE0E8F12B2FD68900854C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F02B2FD68900854C8C /* ContentView.swift */; };
 		1CE0E8F32B2FD68B00854C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */; };
 		1CE0E8F62B2FD68B00854C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0E8F52B2FD68B00854C8C /* Preview Assets.xcassets */; };
 		1CE0E9002B2FD68B00854C8C /* Baby_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E8FF2B2FD68B00854C8C /* Baby_DiaryTests.swift */; };
 		1CE0E90A2B2FD68B00854C8C /* Baby_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9092B2FD68B00854C8C /* Baby_DiaryUITests.swift */; };
 		1CE0E90C2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E90B2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift */; };
+		1CE0E9192B2FE1E800854C8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0E9182B2FE1E800854C8C /* GoogleService-Info.plist */; };
+		1CE0E91C2B2FE2ED00854C8C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E91B2B2FE2ED00854C8C /* FirebaseAnalytics */; };
+		1CE0E91E2B2FE2ED00854C8C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E91D2B2FE2ED00854C8C /* FirebaseAnalyticsSwift */; };
+		1CE0E9202B2FE2ED00854C8C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E91F2B2FE2ED00854C8C /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		1CE0E9222B2FE2ED00854C8C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E9212B2FE2ED00854C8C /* FirebaseAuth */; };
+		1CE0E9242B2FE2ED00854C8C /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E9232B2FE2ED00854C8C /* FirebaseAuthCombine-Community */; };
+		1CE0E9262B2FE2ED00854C8C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E9252B2FE2ED00854C8C /* FirebaseCrashlytics */; };
+		1CE0E9282B2FE2ED00854C8C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E9272B2FE2ED00854C8C /* FirebaseFirestore */; };
+		1CE0E92A2B2FE2ED00854C8C /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E9292B2FE2ED00854C8C /* FirebaseFirestoreCombine-Community */; };
+		1CE0E92C2B2FE2ED00854C8C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E92B2B2FE2ED00854C8C /* FirebaseFirestoreSwift */; };
+		1CE0E92E2B2FE2ED00854C8C /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E92D2B2FE2ED00854C8C /* FirebaseRemoteConfig */; };
+		1CE0E9302B2FE2ED00854C8C /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0E92F2B2FE2ED00854C8C /* FirebaseRemoteConfigSwift */; };
+		1CE0E9332B2FE6A700854C8C /* BabiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9322B2FE6A700854C8C /* BabiesListView.swift */; };
+		1CE0E9362B2FE85D00854C8C /* Baby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9352B2FE85D00854C8C /* Baby.swift */; };
+		1CE0E9382B2FE89D00854C8C /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9372B2FE89D00854C8C /* Name.swift */; };
+		1CE0E93A2B2FE8E000854C8C /* BabiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9392B2FE8E000854C8C /* BabiesListViewModel.swift */; };
+		1CE0E93E2B2FEFA500854C8C /* BabyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E93D2B2FEFA500854C8C /* BabyMainView.swift */; };
+		1CE0E9402B2FF3D600854C8C /* BabyInitialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E93F2B2FF3D600854C8C /* BabyInitialsView.swift */; };
+		1CE0E9422B2FFDEB00854C8C /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9412B2FFDEB00854C8C /* CategoryButtonView.swift */; };
+		1CE0E9442B3001F600854C8C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9432B3001F500854C8C /* Feed.swift */; };
+		1CE0E9462B30C17E00854C8C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9452B30C17D00854C8C /* Category.swift */; };
+		1CE0E9492B3152AF00854C8C /* FeedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9482B3152AF00854C8C /* FeedRowView.swift */; };
+		1CE0E94B2B3280DC00854C8C /* BabyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E94A2B3280DC00854C8C /* BabyMainViewModel.swift */; };
+		1CE0E9512B32818100854C8C /* BabyRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9502B32818100854C8C /* BabyRemoteDataSource.swift */; };
+		1CE0E9532B3281C700854C8C /* BabyRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9522B3281C700854C8C /* BabyRemoteDataSourceImpl.swift */; };
+		1CE0E9562B32832D00854C8C /* FeedRemoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9552B32832D00854C8C /* FeedRemoteEntity.swift */; };
+		1CE0E9582B32853600854C8C /* BabyRemoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9572B32853600854C8C /* BabyRemoteEntity.swift */; };
+		1CE0E95A2B3285A500854C8C /* BabyRemoteEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9592B3285A500854C8C /* BabyRemoteEntityMapper.swift */; };
+		1CE0E95C2B3286BD00854C8C /* GetBabiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E95B2B3286BD00854C8C /* GetBabiesInteractor.swift */; };
+		1CE0E95E2B3286E100854C8C /* GetBabiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E95D2B3286E100854C8C /* GetBabiesInteractorImpl.swift */; };
+		1CE0E9602B32917C00854C8C /* FeedRemoteEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E95F2B32917C00854C8C /* FeedRemoteEntityMapper.swift */; };
+		1CE0E9622B32A70A00854C8C /* FloattingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9612B32A70A00854C8C /* FloattingButtonView.swift */; };
+		1CE0E9642B32AC4700854C8C /* FeedFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9632B32AC4700854C8C /* FeedFormView.swift */; };
+		1CE0E9672B33CA6400854C8C /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9662B33CA6400854C8C /* SizeKey.swift */; };
+		1CE0E9692B33FD2F00854C8C /* FeedFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0E9682B33FD2F00854C8C /* FeedFormViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +73,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CCC83712B35255500AE6784 /* FeedRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteDataSource.swift; sourceTree = "<group>"; };
+		1CCC83732B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		1CCC83752B3537DB00AE6784 /* SaveFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFeedInteractor.swift; sourceTree = "<group>"; };
+		1CCC83772B35380100AE6784 /* SaveFeedInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFeedInteractorImpl.swift; sourceTree = "<group>"; };
 		1CE0E8EB2B2FD68900854C8C /* Baby Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryApp.swift; sourceTree = "<group>"; };
+		1CE0E8EE2B2FD68900854C8C /* BabyDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDiaryApp.swift; sourceTree = "<group>"; };
 		1CE0E8F02B2FD68900854C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE0E8F52B2FD68B00854C8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +87,30 @@
 		1CE0E9052B2FD68B00854C8C /* Baby DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby DiaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE0E9092B2FD68B00854C8C /* Baby_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryUITests.swift; sourceTree = "<group>"; };
 		1CE0E90B2B2FD68B00854C8C /* Baby_DiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_DiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE0E9182B2FE1E800854C8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1CE0E9322B2FE6A700854C8C /* BabiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesListView.swift; sourceTree = "<group>"; };
+		1CE0E9352B2FE85D00854C8C /* Baby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby.swift; sourceTree = "<group>"; };
+		1CE0E9372B2FE89D00854C8C /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		1CE0E9392B2FE8E000854C8C /* BabiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesListViewModel.swift; sourceTree = "<group>"; };
+		1CE0E93D2B2FEFA500854C8C /* BabyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainView.swift; sourceTree = "<group>"; };
+		1CE0E93F2B2FF3D600854C8C /* BabyInitialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyInitialsView.swift; sourceTree = "<group>"; };
+		1CE0E9412B2FFDEB00854C8C /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
+		1CE0E9432B3001F500854C8C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		1CE0E9452B30C17D00854C8C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1CE0E9482B3152AF00854C8C /* FeedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowView.swift; sourceTree = "<group>"; };
+		1CE0E94A2B3280DC00854C8C /* BabyMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainViewModel.swift; sourceTree = "<group>"; };
+		1CE0E9502B32818100854C8C /* BabyRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyRemoteDataSource.swift; sourceTree = "<group>"; };
+		1CE0E9522B3281C700854C8C /* BabyRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		1CE0E9552B32832D00854C8C /* FeedRemoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteEntity.swift; sourceTree = "<group>"; };
+		1CE0E9572B32853600854C8C /* BabyRemoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyRemoteEntity.swift; sourceTree = "<group>"; };
+		1CE0E9592B3285A500854C8C /* BabyRemoteEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyRemoteEntityMapper.swift; sourceTree = "<group>"; };
+		1CE0E95B2B3286BD00854C8C /* GetBabiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBabiesInteractor.swift; sourceTree = "<group>"; };
+		1CE0E95D2B3286E100854C8C /* GetBabiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBabiesInteractorImpl.swift; sourceTree = "<group>"; };
+		1CE0E95F2B32917C00854C8C /* FeedRemoteEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteEntityMapper.swift; sourceTree = "<group>"; };
+		1CE0E9612B32A70A00854C8C /* FloattingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloattingButtonView.swift; sourceTree = "<group>"; };
+		1CE0E9632B32AC4700854C8C /* FeedFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFormView.swift; sourceTree = "<group>"; };
+		1CE0E9662B33CA6400854C8C /* SizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeKey.swift; sourceTree = "<group>"; };
+		1CE0E9682B33FD2F00854C8C /* FeedFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFormViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +118,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE0E91E2B2FE2ED00854C8C /* FirebaseAnalyticsSwift in Frameworks */,
+				1CE0E92A2B2FE2ED00854C8C /* FirebaseFirestoreCombine-Community in Frameworks */,
+				1CE0E9202B2FE2ED00854C8C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				1CE0E91C2B2FE2ED00854C8C /* FirebaseAnalytics in Frameworks */,
+				1CE0E9262B2FE2ED00854C8C /* FirebaseCrashlytics in Frameworks */,
+				1CE0E9302B2FE2ED00854C8C /* FirebaseRemoteConfigSwift in Frameworks */,
+				1CE0E9222B2FE2ED00854C8C /* FirebaseAuth in Frameworks */,
+				1CE0E9242B2FE2ED00854C8C /* FirebaseAuthCombine-Community in Frameworks */,
+				1CE0E9282B2FE2ED00854C8C /* FirebaseFirestore in Frameworks */,
+				1CE0E92C2B2FE2ED00854C8C /* FirebaseFirestoreSwift in Frameworks */,
+				1CE0E92E2B2FE2ED00854C8C /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +172,12 @@
 		1CE0E8ED2B2FD68900854C8C /* Baby Diary */ = {
 			isa = PBXGroup;
 			children = (
-				1CE0E8EE2B2FD68900854C8C /* Baby_DiaryApp.swift */,
+				1CE0E94E2B32815700854C8C /* RemoteDataSource */,
+				1CE0E94C2B3280E800854C8C /* Interactors */,
+				1CE0E9342B2FE84D00854C8C /* Models */,
+				1CE0E9312B2FE69000854C8C /* Views */,
+				1CE0E9182B2FE1E800854C8C /* GoogleService-Info.plist */,
+				1CE0E8EE2B2FD68900854C8C /* BabyDiaryApp.swift */,
 				1CE0E8F02B2FD68900854C8C /* ContentView.swift */,
 				1CE0E8F22B2FD68B00854C8C /* Assets.xcassets */,
 				1CE0E8F42B2FD68B00854C8C /* Preview Content */,
@@ -127,6 +210,117 @@
 			path = "Baby DiaryUITests";
 			sourceTree = "<group>";
 		};
+		1CE0E9312B2FE69000854C8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9652B33C22B00854C8C /* Extensions */,
+				1CE0E9472B31529900854C8C /* Feed */,
+				1CE0E93C2B2FEF9000854C8C /* Baby */,
+				1CE0E93B2B2FEED600854C8C /* BabiesList */,
+				1CE0E9612B32A70A00854C8C /* FloattingButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CE0E9342B2FE84D00854C8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9352B2FE85D00854C8C /* Baby.swift */,
+				1CE0E9372B2FE89D00854C8C /* Name.swift */,
+				1CE0E9432B3001F500854C8C /* Feed.swift */,
+				1CE0E9452B30C17D00854C8C /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CE0E93B2B2FEED600854C8C /* BabiesList */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9322B2FE6A700854C8C /* BabiesListView.swift */,
+				1CE0E9392B2FE8E000854C8C /* BabiesListViewModel.swift */,
+			);
+			path = BabiesList;
+			sourceTree = "<group>";
+		};
+		1CE0E93C2B2FEF9000854C8C /* Baby */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E93D2B2FEFA500854C8C /* BabyMainView.swift */,
+				1CE0E93F2B2FF3D600854C8C /* BabyInitialsView.swift */,
+				1CE0E9412B2FFDEB00854C8C /* CategoryButtonView.swift */,
+				1CE0E94A2B3280DC00854C8C /* BabyMainViewModel.swift */,
+			);
+			path = Baby;
+			sourceTree = "<group>";
+		};
+		1CE0E9472B31529900854C8C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9482B3152AF00854C8C /* FeedRowView.swift */,
+				1CE0E9632B32AC4700854C8C /* FeedFormView.swift */,
+				1CE0E9682B33FD2F00854C8C /* FeedFormViewModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1CE0E94C2B3280E800854C8C /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E94D2B32814C00854C8C /* Impl */,
+				1CE0E95B2B3286BD00854C8C /* GetBabiesInteractor.swift */,
+				1CCC83752B3537DB00AE6784 /* SaveFeedInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		1CE0E94D2B32814C00854C8C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E95D2B3286E100854C8C /* GetBabiesInteractorImpl.swift */,
+				1CCC83772B35380100AE6784 /* SaveFeedInteractorImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		1CE0E94E2B32815700854C8C /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9542B32831D00854C8C /* Model */,
+				1CE0E94F2B32816800854C8C /* Impl */,
+				1CE0E9502B32818100854C8C /* BabyRemoteDataSource.swift */,
+				1CCC83712B35255500AE6784 /* FeedRemoteDataSource.swift */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		1CE0E94F2B32816800854C8C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9522B3281C700854C8C /* BabyRemoteDataSourceImpl.swift */,
+				1CCC83732B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		1CE0E9542B32831D00854C8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9552B32832D00854C8C /* FeedRemoteEntity.swift */,
+				1CE0E9572B32853600854C8C /* BabyRemoteEntity.swift */,
+				1CE0E9592B3285A500854C8C /* BabyRemoteEntityMapper.swift */,
+				1CE0E95F2B32917C00854C8C /* FeedRemoteEntityMapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CE0E9652B33C22B00854C8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0E9662B33CA6400854C8C /* SizeKey.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +337,19 @@
 			dependencies = (
 			);
 			name = "Baby Diary";
+			packageProductDependencies = (
+				1CE0E91B2B2FE2ED00854C8C /* FirebaseAnalytics */,
+				1CE0E91D2B2FE2ED00854C8C /* FirebaseAnalyticsSwift */,
+				1CE0E91F2B2FE2ED00854C8C /* FirebaseAnalyticsWithoutAdIdSupport */,
+				1CE0E9212B2FE2ED00854C8C /* FirebaseAuth */,
+				1CE0E9232B2FE2ED00854C8C /* FirebaseAuthCombine-Community */,
+				1CE0E9252B2FE2ED00854C8C /* FirebaseCrashlytics */,
+				1CE0E9272B2FE2ED00854C8C /* FirebaseFirestore */,
+				1CE0E9292B2FE2ED00854C8C /* FirebaseFirestoreCombine-Community */,
+				1CE0E92B2B2FE2ED00854C8C /* FirebaseFirestoreSwift */,
+				1CE0E92D2B2FE2ED00854C8C /* FirebaseRemoteConfig */,
+				1CE0E92F2B2FE2ED00854C8C /* FirebaseRemoteConfigSwift */,
+			);
 			productName = "Baby Diary";
 			productReference = 1CE0E8EB2B2FD68900854C8C /* Baby Diary.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +422,9 @@
 				Base,
 			);
 			mainGroup = 1CE0E8E22B2FD68900854C8C;
+			packageReferences = (
+				1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1CE0E8EC2B2FD68900854C8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +443,7 @@
 			files = (
 				1CE0E8F62B2FD68B00854C8C /* Preview Assets.xcassets in Resources */,
 				1CE0E8F32B2FD68B00854C8C /* Assets.xcassets in Resources */,
+				1CE0E9192B2FE1E800854C8C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +468,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE0E9512B32818100854C8C /* BabyRemoteDataSource.swift in Sources */,
 				1CE0E8F12B2FD68900854C8C /* ContentView.swift in Sources */,
-				1CE0E8EF2B2FD68900854C8C /* Baby_DiaryApp.swift in Sources */,
+				1CE0E9332B2FE6A700854C8C /* BabiesListView.swift in Sources */,
+				1CE0E9642B32AC4700854C8C /* FeedFormView.swift in Sources */,
+				1CE0E93A2B2FE8E000854C8C /* BabiesListViewModel.swift in Sources */,
+				1CE0E9492B3152AF00854C8C /* FeedRowView.swift in Sources */,
+				1CE0E9622B32A70A00854C8C /* FloattingButtonView.swift in Sources */,
+				1CE0E9532B3281C700854C8C /* BabyRemoteDataSourceImpl.swift in Sources */,
+				1CE0E9582B32853600854C8C /* BabyRemoteEntity.swift in Sources */,
+				1CE0E9602B32917C00854C8C /* FeedRemoteEntityMapper.swift in Sources */,
+				1CE0E8EF2B2FD68900854C8C /* BabyDiaryApp.swift in Sources */,
+				1CE0E9362B2FE85D00854C8C /* Baby.swift in Sources */,
+				1CCC83782B35380100AE6784 /* SaveFeedInteractorImpl.swift in Sources */,
+				1CE0E9442B3001F600854C8C /* Feed.swift in Sources */,
+				1CE0E9382B2FE89D00854C8C /* Name.swift in Sources */,
+				1CE0E93E2B2FEFA500854C8C /* BabyMainView.swift in Sources */,
+				1CCC83742B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift in Sources */,
+				1CE0E9402B2FF3D600854C8C /* BabyInitialsView.swift in Sources */,
+				1CE0E95A2B3285A500854C8C /* BabyRemoteEntityMapper.swift in Sources */,
+				1CE0E9422B2FFDEB00854C8C /* CategoryButtonView.swift in Sources */,
+				1CE0E95E2B3286E100854C8C /* GetBabiesInteractorImpl.swift in Sources */,
+				1CE0E9462B30C17E00854C8C /* Category.swift in Sources */,
+				1CCC83762B3537DB00AE6784 /* SaveFeedInteractor.swift in Sources */,
+				1CE0E9672B33CA6400854C8C /* SizeKey.swift in Sources */,
+				1CE0E9562B32832D00854C8C /* FeedRemoteEntity.swift in Sources */,
+				1CCC83722B35255500AE6784 /* FeedRemoteDataSource.swift in Sources */,
+				1CE0E95C2B3286BD00854C8C /* GetBabiesInteractor.swift in Sources */,
+				1CE0E94B2B3280DC00854C8C /* BabyMainViewModel.swift in Sources */,
+				1CE0E9692B33FD2F00854C8C /* FeedFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +826,75 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE0E91B2B2FE2ED00854C8C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1CE0E91D2B2FE2ED00854C8C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		1CE0E91F2B2FE2ED00854C8C /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		1CE0E9212B2FE2ED00854C8C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1CE0E9232B2FE2ED00854C8C /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		1CE0E9252B2FE2ED00854C8C /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		1CE0E9272B2FE2ED00854C8C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		1CE0E9292B2FE2ED00854C8C /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		1CE0E92B2B2FE2ED00854C8C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		1CE0E92D2B2FE2ED00854C8C /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		1CE0E92F2B2FE2ED00854C8C /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0E91A2B2FE2ED00854C8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CE0E8E32B2FD68900854C8C /* Project object */;
 }

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum Category: String, CaseIterable {
+    case feed = "Feeds"
+    case diaper = "Diapers"
+    case sleep = "Sleep"
+}

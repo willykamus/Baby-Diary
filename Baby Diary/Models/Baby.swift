@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Baby: Identifiable, Hashable {
+    var id: String
+    var name: Name
+    var dateOfBirth: Date
+    var feeds: [Feed]
+}

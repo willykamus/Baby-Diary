@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol GetBabiesInteractor {
+    func execute() async -> [Baby]
+}

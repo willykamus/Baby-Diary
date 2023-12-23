@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct BabyInitialsView: View {
+    
+    var name: Name
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Circle()
+            .frame(width: 50, height: 50)
+            .overlay {
+                Text(name.initialis())
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+
+            }
     }
 }
 
 #Preview {
-    BabyInitialsView()
+    BabyInitialsView(name: Name(firstName: "Savannah", lastName: "Ching"))
 }

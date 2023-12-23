@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class BabyRemoteEntityMapper {
+    func toEntity(remoteEntity: BabyRemoteEntity) -> Baby {
+        return Baby(id: remoteEntity.id ?? "", name: Name(firstName: remoteEntity.firstName, lastName: remoteEntity.lastName), dateOfBirth: remoteEntity.dateOfBirth, feeds: [])
+    }
+}

@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class SaveFeedInteractorImpl: SaveFeedInteractor {
+    
+    private let feedRemoteDataSource: FeedRemoteDataSource = FeedRemoteDataSourceImpl()
+    
+    func execute(id: String, feeds: [Feed]) async -> Bool {
+        return await feedRemoteDataSource.add(id: id, feeds: feeds)
+    }
+    
+    
+}

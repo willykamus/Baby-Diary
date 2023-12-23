@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct FloattingButtonView: View {
+    
+    var action: () -> ()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button(action: {
+                action()
+            }, label: {
+                Image(systemName: "plus")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 50, height: 50)
+                    .background(Color.pink)
+                    .clipShape(Circle())
+            })
+        
     }
 }
 
 #Preview {
-    FloattingButtonView()
+    FloattingButtonView(action: {})
 }
