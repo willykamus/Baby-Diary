@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SaveFeedInteractor {
-    func execute(id: String, feeds: [Feed]) async -> Bool
+    func execute(id: String, feeds: [any Feed]) async -> Bool
 }

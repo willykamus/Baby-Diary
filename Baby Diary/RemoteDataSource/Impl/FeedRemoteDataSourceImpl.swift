@@ -13,7 +13,7 @@ class FeedRemoteDataSourceImpl: FeedRemoteDataSource {
     
     let database = Firestore.firestore()
     
-    func add(id: String, feeds: [Feed]) async -> Bool {
+    func add(id: String, feeds: [any Feed]) async -> Bool {
         do {
             for feed in feeds {
                 let remoteEntity = FeedRemoteEntityMapper().toRemoteEntity(entity: feed)

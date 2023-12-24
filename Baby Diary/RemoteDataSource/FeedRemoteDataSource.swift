@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FeedRemoteDataSource {
-    func add(id: String, feeds: [Feed]) async -> Bool
+    func add(id: String, feeds: [any Feed]) async -> Bool
 }

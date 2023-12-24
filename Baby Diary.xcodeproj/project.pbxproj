@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC36DC82B37DF5E006F3EAC /* BreastfeedingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC36DC72B37DF5E006F3EAC /* BreastfeedingFormView.swift */; };
 		1CCC83722B35255500AE6784 /* FeedRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83712B35255500AE6784 /* FeedRemoteDataSource.swift */; };
 		1CCC83742B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83732B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift */; };
 		1CCC83762B3537DB00AE6784 /* SaveFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC83752B3537DB00AE6784 /* SaveFeedInteractor.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CC36DC72B37DF5E006F3EAC /* BreastfeedingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreastfeedingFormView.swift; sourceTree = "<group>"; };
 		1CCC83712B35255500AE6784 /* FeedRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteDataSource.swift; sourceTree = "<group>"; };
 		1CCC83732B3526C500AE6784 /* FeedRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
 		1CCC83752B3537DB00AE6784 /* SaveFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFeedInteractor.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				1CE0E9482B3152AF00854C8C /* FeedRowView.swift */,
 				1CE0E9632B32AC4700854C8C /* FeedFormView.swift */,
 				1CE0E9682B33FD2F00854C8C /* FeedFormViewModel.swift */,
+				1CC36DC72B37DF5E006F3EAC /* BreastfeedingFormView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				1CE0E9642B32AC4700854C8C /* FeedFormView.swift in Sources */,
 				1CE0E93A2B2FE8E000854C8C /* BabiesListViewModel.swift in Sources */,
 				1CE0E9492B3152AF00854C8C /* FeedRowView.swift in Sources */,
+				1CC36DC82B37DF5E006F3EAC /* BreastfeedingFormView.swift in Sources */,
 				1CE0E9622B32A70A00854C8C /* FloattingButtonView.swift in Sources */,
 				1CE0E9532B3281C700854C8C /* BabyRemoteDataSourceImpl.swift in Sources */,
 				1CE0E9582B32853600854C8C /* BabyRemoteEntity.swift in Sources */,

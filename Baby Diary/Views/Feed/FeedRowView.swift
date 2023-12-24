@@ -9,18 +9,21 @@ import SwiftUI
 
 struct FeedRowView: View {
     
-    @Binding var feed: Feed
+    @Binding var feed: any Feed
     
     var body: some View {
-        HStack(alignment: .center) {
-            VStack(alignment: .leading) {
-                Text(feed.method.rawValue)
-                Text(getTimeOfDay(date:feed.date))
+        if let feed = self.feed as? Bottle {
+            HStack(alignment: .center) {
+                VStack(alignment: .leading) {
+                    Text("Bottle with \(feed.content.rawValue)")
+                    Text(getTimeOfDay(date:feed.date))
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Text(formater().string(from: feed.measurement))
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Text(formater().string(from: feed.measurement))
         }
+        
     }
     
     private func formater() -> MeasurementFormatter {
@@ -38,5 +41,5 @@ struct FeedRowView: View {
 }
 
 #Preview {
-    FeedRowView(feed: .constant(Feed(id: "", method: .breastfeeding, measurement: Measurement(value: 10, unit: .milliliters), date: Date())))
+    FeedRowView(feed: .constant(Bottle(id: "", date: Date(), content: .breastMilk, measurement: Measurement(value: 0, unit: .milliliters))))
 }

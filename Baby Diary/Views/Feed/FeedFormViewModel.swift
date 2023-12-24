@@ -17,8 +17,12 @@ class FeedFormViewModel: ObservableObject {
     
     func save(id: String) async -> Bool {
         if !amount.isEmpty {
-            let feed = Feed(id: UUID().uuidString, method: method, measurement: Measurement(value: Double(amount) ?? 0, unit: .milliliters), date: date)
-            return await saveFeedInteractor.execute(id: id, feeds: [feed])
+            if method == .breastMilkBottle {
+                let feed = Bottle(id: UUID().uuidString, date: date, content: .breastMilk, measurement: Measurement(value: Double(amount) ?? 0, unit: .milliliters))
+                return await saveFeedInteractor.execute(id: id, feeds: [feed])
+            } else {
+                return false
+            }
         } else {
             return false
         }

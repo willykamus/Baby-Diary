@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "228290AF-B2FA-4E86-9B1B-A6CC255F8935"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8D30BF2-6308-4F9E-B7A7-0A794AE23BFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Baby Diary/Views/Feed/FeedFormViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "save(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F8D30BF2-6308-4F9E-B7A7-0A794AE23BFF - c8ac12ca5c8a992b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Baby_Diary.FeedFormViewModel.save(id: Swift.String) async -&gt; Swift.Bool"
+                  moduleName = "Baby Diary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/williamching/Baby-Diary/Baby%20Diary/Views/Feed/FeedFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "854">
+               </Location>
+               <Location
+                  uuid = "F8D30BF2-6308-4F9E-B7A7-0A794AE23BFF - 7d30ddcfdd3eab6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Baby_Diary.FeedFormViewModel.save(id: Swift.String) async -&gt; Swift.Bool"
+                  moduleName = "Baby Diary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/williamching/Baby-Diary/Baby%20Diary/Views/Feed/FeedFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "F8D30BF2-6308-4F9E-B7A7-0A794AE23BFF - 9209edb524625d2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Baby_Diary.FeedFormViewModel.save(id: Swift.String) async -&gt; Swift.Bool"
+                  moduleName = "Baby Diary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/williamching/Baby-Diary/Baby%20Diary/Views/Feed/FeedFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17B80D97-14A7-4339-AECF-D7C57F91DCFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Baby Diary/Views/Feed/FeedFormViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "save(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

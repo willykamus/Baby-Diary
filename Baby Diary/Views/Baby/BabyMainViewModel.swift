@@ -20,15 +20,16 @@ class BabyMainViewModel: ObservableObject {
         }
     }
     
-    private func sortByDate(feeds: [Feed]) -> [FeedSection] {
+    private func sortByDate(feeds: [any Feed]) -> [FeedSection] {
         let sections = Dictionary(grouping: feeds) { feed in
             Calendar.current.date(from: Calendar.current.dateComponents([.year, .month, .day], from: feed.date))!
         }
         let sorted = sections.sorted(by: { $0.key > $1.key})
         var displaySections: [FeedSection] = []
         for section in sorted {
-            let total = section.value.compactMap { feed in
-                feed.measurement.value
+            let feeds: [Bottle] = section.value.compactMap { $0 as? Bottle }
+            let total = feeds.compactMap { bottle in
+                    bottle.measurement.value
             }.reduce(0, +)
             displaySections.append(FeedSection(feeds: section.value, total: String(total), title: section.key.formatted(date: .abbreviated, time: .omitted)))
         }
@@ -37,8 +38,9 @@ class BabyMainViewModel: ObservableObject {
     
 }
 
-struct FeedSection: Hashable {
-    var feeds: [Feed]
+struct FeedSection: Identifiable {
+    var id: UUID = UUID()
+    var feeds: [any Feed]
     var total: String
     var title: String
 }

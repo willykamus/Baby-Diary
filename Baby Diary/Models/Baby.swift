@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Baby: Identifiable, Hashable {
+struct Baby: Identifiable {
     var id: String
     var name: Name
     var dateOfBirth: Date
-    var feeds: [Feed]
+    var feeds: [any Feed]
 }

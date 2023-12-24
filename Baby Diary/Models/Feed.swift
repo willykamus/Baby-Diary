@@ -7,17 +7,34 @@
 
 import Foundation
 
-struct Feed: Hashable, Identifiable {
+struct Breastfeeding: Feed, Identifiable {
     var id: String
-    var method: FeedMethod
-    var measurement: Measurement<UnitVolume>
     var date: Date
+    var start: Date
+    var end: Date
 }
 
-enum FeedMethod: String, CodingKey, CaseIterable {
-    case breastfeeding = "Breastfeeding"
-    case breastMilkBottle = "Bottle with breast milk"
+struct Bottle: Feed, Identifiable {
+    var id: String
+    var date: Date
+    var content: BottleContent
+    var measurement: Measurement<UnitVolume>
+}
+
+enum BottleContent: String {
+    case breastMilk = "Breast Milk"
     case formula = "Formula"
+}
+
+protocol Feed {
+    var id: String { get set }
+    var date: Date { get set }
+}
+
+enum FeedMethod: String, CaseIterable {
+    case breastfeeding
+    case breastMilkBottle
+    case formula
     case unowned
 }
 

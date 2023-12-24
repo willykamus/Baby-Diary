@@ -35,9 +35,9 @@ class BabyRemoteDataSourceImpl: BabyRemoteDataSource {
         return Baby(id: "", name: Name(firstName: "", lastName: ""), dateOfBirth: Date(), feeds: [])
     }
     
-    private func getFeeds(from document: DocumentSnapshot) async -> [Feed] {
+    private func getFeeds(from document: DocumentSnapshot) async -> [any Feed] {
         do {
-            var feeds: [Feed] = []
+            var feeds: [any Feed] = []
             let query = try await document.reference.collection("feeds").getDocuments()
             for document in query.documents {
                 let feedRemoteEntity = try document.data(as: FeedRemoteEntity.self)

@@ -15,33 +15,48 @@ struct FeedFormView: View {
     
     var body: some View {
         VStack(spacing: 8) {
-            LabeledContent {
-                TextField(text: $feedFormViewModel.amount) {
-                    EmptyView()
+            if feedFormViewModel.method == .breastfeeding {
+                DatePicker(selection: $feedFormViewModel.date, in: ...Date()) {
+                    Text("Start time")
+                        .font(.callout)
                 }
-                .font(.callout)
-                .multilineTextAlignment(.trailing)
-            } label: {
-                Text("Amount")
+            } else {
+                LabeledContent {
+                    TextField(text: $feedFormViewModel.amount) {
+                        EmptyView()
+                    }
                     .font(.callout)
+                    .multilineTextAlignment(.trailing)
+                } label: {
+                    Text("Amount")
+                        .font(.callout)
+                }
             }
+            
             
             Divider()
             
-            LabeledContent {
-                Picker("Unit", selection: $feedFormViewModel.unit) {
-                    Text(UnitVolume.milliliters.symbol)
+            if feedFormViewModel.method == .breastfeeding {
+                DatePicker(selection: $feedFormViewModel.date, in: ...Date()) {
+                    Text("End time")
                         .font(.callout)
-                        .tag(UnitVolume.milliliters)
-                    Text(UnitVolume.fluidOunces.symbol)
-                        .font(.callout)
-                        .tag(UnitVolume.fluidOunces)
                 }
-                .tint(.gray)
-                .padding(.trailing, -12)
-            } label: {
-                Text("Unit")
-                    .font(.callout)
+            } else {
+                LabeledContent {
+                    Picker("Unit", selection: $feedFormViewModel.unit) {
+                        Text(UnitVolume.milliliters.symbol)
+                            .font(.callout)
+                            .tag(UnitVolume.milliliters)
+                        Text(UnitVolume.fluidOunces.symbol)
+                            .font(.callout)
+                            .tag(UnitVolume.fluidOunces)
+                    }
+                    .tint(.gray)
+                    .padding(.trailing, -12)
+                } label: {
+                    Text("Unit")
+                        .font(.callout)
+                }
             }
             
             Divider()
@@ -63,11 +78,15 @@ struct FeedFormView: View {
                     .font(.callout)
             }
             
-            Divider()
-            
-            DatePicker(selection: $feedFormViewModel.date, in: ...Date()) {
-                Text("Date")
-                    .font(.callout)
+            if feedFormViewModel.method == .breastfeeding {
+                EmptyView()
+            } else {
+                Divider()
+                
+                DatePicker(selection: $feedFormViewModel.date, in: ...Date()) {
+                    Text("Date")
+                        .font(.callout)
+                }
             }
             
             Divider()

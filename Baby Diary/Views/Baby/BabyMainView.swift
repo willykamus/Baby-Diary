@@ -54,7 +54,7 @@ struct BabyMainView: View {
 //                        .containerRelativeFrame(.horizontal)
                         
                         List {
-                            ForEach(babyMainViewModel.feedSections, id: \.self) { feedSection in
+                            ForEach(babyMainViewModel.feedSections, id: \.id) { feedSection in
                                 Section {
                                     ForEach(feedSection.feeds, id: \.id) { feed in
                                         FeedRowView(feed: .constant(feed))
